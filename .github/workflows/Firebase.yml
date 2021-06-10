@@ -28,7 +28,7 @@ jobs:
     - name: npm install, build
       run: |      
         npm install
-        npm CI=false run-script build
+        CI=false npm run-script build
     - name: Archive Build
       uses: actions/upload-artifact@v2
       with:
