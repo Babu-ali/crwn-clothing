@@ -26,7 +26,7 @@ class  App extends React.Component {
 
       console.log(user);
       {
-        <div>BABU{currentUser}</div>
+        <div>BABU{user}</div>
       }
     })
   }
