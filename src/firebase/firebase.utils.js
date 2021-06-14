@@ -5,6 +5,7 @@ import 'firebase/auth';
 const config = {
     apiKey: "AIzaSyCnV9iazGyQgvGklo4pMC2P3t0k4V4wIq4",
     authDomain: "crwn-db-6d298.firebaseapp.com",
+    databaseURL: "https://crwn-db-6d298.firebaseio.com",
     projectId: "crwn-db-6d298",
     storageBucket: "crwn-db-6d298.appspot.com",
     messagingSenderId: "31654205598",
