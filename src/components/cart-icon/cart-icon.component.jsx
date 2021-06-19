@@ -1,12 +1,19 @@
 import React from 'react';
 import { ReactComponent as ShoppingIcon } from '../../assests/shopping-bag.svg';
-//import {ReactComponent as Logo} from '../../assests/crown.svg';
+import { connect } from 'react-redux';
+import { toggelCartHidden } from '../../redux/cart/cart.actions';
+
 import './cart-icon.styles.scss';
 
-const CartIcon = () => (
-    <div className='cart-icon'>
+const CartIcon = ({ toggelCartHidden }) => (
+    <div className='cart-icon' onClick={toggelCartHidden}>
         <ShoppingIcon className='shopping-icon'/>
         <span className='item-count'>0</span>
     </div>
 );
-export default CartIcon;
+
+const mapDispatchToProps = dispatch => ({
+    toggelCartHidden: () => dispatch(toggelCartHidden())
+});
+
+export default connect(null, mapDispatchToProps)(CartIcon);
