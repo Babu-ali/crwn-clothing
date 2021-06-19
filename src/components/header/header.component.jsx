@@ -28,11 +28,11 @@ const Header = ({ currentUser, hidden }) => (
                     SIGN IN
                 </Link>
             }
-            {
-                hidden?null:<CartIcon/>
-            } 
+                <CartIcon/>
         </div>
-        <CartDropDown />
+        {
+            hidden?null:<CartDropDown />
+        }
     </div>
 );
 
